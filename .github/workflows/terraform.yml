@@ -32,4 +32,12 @@ jobs:
 
     - name: Install GCloud
       run: sudo snap install google-cloud-cli --classic
-      
+
+    - name: Setup GCP
+      run: gcloud config set auth/impersonate_service_account sa-terraform-org@prj-b-seed-3d8e.iam.gserviceaccount.com
+
+    - name: Terraform init
+      run: |
+        export GOOGLE_IMPERSONATE_SERVICE_ACCOUNT="sa-terraform-org@prj-b-seed-3d8e.iam.gserviceaccount.com"
+        terraform init
+        terraform plan

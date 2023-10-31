@@ -39,5 +39,5 @@ jobs:
     - name: Terraform init
       run: |
         export GOOGLE_IMPERSONATE_SERVICE_ACCOUNT="sa-terraform-org@prj-b-seed-3d8e.iam.gserviceaccount.com"
-        terraform init
-        terraform plan
+        terraform init -chdir="./1-org/envs/shared/"
+        terraform plan -chdir="./1-org/envs/shared/"

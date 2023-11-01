@@ -19,7 +19,7 @@ domains_to_allow = ["clearroute.co.uk", "clearroute.io"]
 
 essential_contacts_domains_to_allow = ["@clearroute.co.uk"]
 
-billing_data_users = "gcp-billing-data-users@clearroute.co.uk"
+billing_data_users = "gcp-billing-admins@clearroute.co.uk"
 
 audit_data_users = "gcp-security-admins@clearroute.co.uk"
 

@@ -38,3 +38,13 @@ terraform {
     module_name = "blueprints/terraform/terraform-example-foundation:org/v3.0.0"
   }
 }
+
+provider "google" {
+  billing_project       = "prj-b-seed-3d8e"
+  user_project_override = true
+}
+
+provider "google-beta" {
+  billing_project       = "prj-b-seed-3d8e"
+  user_project_override = true
+}
